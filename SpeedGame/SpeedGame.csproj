@@ -57,6 +57,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy /y "$(TargetPath)" "C:\Users\kevin\Desktop\FiveM Server\resources\boomer_scripts"
-</PostBuildEvent>
+copy /y "$(ProjectDir)\server.lua" "C:\Users\kevin\Desktop\FiveM Server\resources\boomer_scripts"
+copy /y "$(ProjectDir)\__resource.lua" "C:\Users\kevin\Desktop\FiveM Server\resources\boomer_scripts"</PostBuildEvent>
   </PropertyGroup>
 </Project>
